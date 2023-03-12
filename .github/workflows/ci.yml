@@ -15,4 +15,3 @@ jobs:
         run: |
           yarn
           npm run build
-          npm run start

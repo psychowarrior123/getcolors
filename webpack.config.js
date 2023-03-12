@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx", // точка входа, о которой говорилось ранее.
-  mode: "development",
+  mode: "production",
   module: {
     rules: [
       {
