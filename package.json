@@ -31,7 +31,8 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
-    "worker-loader": "^3.0.8"
+    "worker-loader": "^3.0.8",
+    "react-hot-loader": "^4.13.1"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -45,7 +46,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
-    "react-hot-loader": "^4.13.1",
     "react-i18next": "^12.2.0",
     "react-inlinesvg": "^3.0.2",
     "rgbaster": "^2.1.1"
