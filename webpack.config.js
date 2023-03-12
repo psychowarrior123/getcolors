@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx", // точка входа, о которой говорилось ранее.
@@ -43,8 +44,10 @@ module.exports = {
     hot: "only",
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin({
-      favicon: "./public/images/favicon.png",
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      favicon: "./public/favicon.png",
+      template: "./public/index.html",
     }),
   ], // used for hot reloading when developing
   devtool: "eval-source-map", // создает высококачественные карты кода
