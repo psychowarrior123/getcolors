@@ -46,7 +46,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      favicon: "./public/favicon.png",
+      favicon: "./images/favicon.ico",
       template: "./index.html",
     }),
   ], // used for hot reloading when developing
