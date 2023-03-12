@@ -35,11 +35,11 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "public/"),
+      directory: path.join(__dirname),
     },
     port: 3001,
     devMiddleware: {
-      publicPath: "https://localhost:3001/dist/",
+      publicPath: "https://localhost:3001/",
     },
     hot: "only",
   },
@@ -47,7 +47,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       favicon: "./public/favicon.png",
-      template: "./public/index.html",
+      template: "./index.html",
     }),
   ], // used for hot reloading when developing
   devtool: "eval-source-map", // создает высококачественные карты кода
