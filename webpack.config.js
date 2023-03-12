@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx", // точка входа, о которой говорилось ранее.
-  mode: "production",
+  mode: process.env.NODE_ENV === "production" ? "production" : "development",
   module: {
     rules: [
       {
@@ -30,7 +30,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js", // выходной бандл
   },
   devServer: {
